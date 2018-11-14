@@ -13,20 +13,20 @@ Iodum,Jod
 Silicium,Krzem
 Lithium,Lit
 Magnesium,Magnez
-Cuprum,MiedÅº
-Plumbum,OÅ‚Ã³w
+Cuprum,MiedŸ
+Plumbum,O³ów
 Kalium,Potas
-Hydrargyrum,RtÄ™Ä‡
+Hydrargyrum,Rtêæ
 Selenium,Selen
 Sulfur,Siarka
-Natrium,SÃ³d
+Natrium,Sód
 Argentum,Srebro
 Oxygenium,Tlen
-Calcium,WapÅ„
-Carboneum,WÄ™giel
-Hydrogenium,WodÃ³r
-Aurum,ZÅ‚oto
-Ferrum,Å»elazo
+Calcium,Wapñ
+Carboneum,Wêgiel
+Hydrogenium,Wodór
+Aurum,Z³oto
+Ferrum,¯elazo
 Calcii oxidum,tlenek wapnia
 Hydrogenii peroxidum,nadtlenek wodoru
 Magnesii oxidum,tlenek magnezu
@@ -35,14 +35,14 @@ Aluminii hydroxidum,wodorotlenek glinu
 Calcii hydroxidum,wodorotlenek wapnia
 Natrii hydroxidum,wodorotlenek sodu
 Acidum sulfuricum,kwas siarkowy
-Acidum carbonicum,kwas wÄ™glowy
-Acidum hydrocarbonicum,kwas wodorowÄ™glowy
+Acidum carbonicum,kwas wêglowy
+Acidum hydrocarbonicum,kwas wodorowêglowy
 Acidum phoshoricum,kwas fosforowy
 Acidum nitricum,kwas azotowy
 Acidum boricum,kwas borowy
 Acidum hydrochloricum,kwas chlorowodorowy
 Acidum aceticum,kwas octowy
-Acidum formicum,kwas mrÃ³wkowy
+Acidum formicum,kwas mrówkowy
 Acidum propionicum,kwas propionowy
 Acidum lacticum,kwas mlekowy
 Acidum benzoicum,kwas benzoesowy
@@ -51,19 +51,19 @@ Acidum citricum,kwas cytrynowy
 Acidum tartaricum,kwas winowy
 Acidum folicum,kwas foliowy
 Acidum ascorbicum,kwas askorbowy
-Magnesii carbonas,wÄ™glan magnezu
+Magnesii carbonas,wêglan magnezu
 Aluminii phosphas,fosforan glinu
 Argenti nitras,azotan srebra
 Natrii sulfas,siarczan sodu
 Kalii phosphas,fosforan potasu
-Lithii carbonas,wÄ™glan litu
-Natrii hydrocarbonas,wodorowÄ™glan sodu
+Lithii carbonas,wêglan litu
+Natrii hydrocarbonas,wodorowêglan sodu
 Natrii dihydrophosphas,diwodorofosforan sodu
 Kalii permanganas,nadmanganian potasu
 Natrii tiosulfas,tiosiarczan sodu
 Natrii nitris,azotyn sodu
 Kalii sulfis,siarczyn potasu
-Ferrosi gluconas,glukonian Å¼elaza
+Ferrosi gluconas,glukonian ¿elaza
 Natrii benzoas,benzoesan sodu
 Natrii salicylas,salicylan sodu
 Natrii citras,cytrynian sodu
@@ -82,19 +82,19 @@ Chlorpromazini hydrochloridum,chloropromazyny chlorowodorek
 Homatropini hydrobromidum,homatropiny bromowodorek
 Morphini hydrochloridum,morfiny chlorowodorek
 Papaverini hydrochloridum,papaweryny chlorowodorek
-Belladonnae folium,liÅ›Ä‡ pokrzyku
-Adonidis vernalis herba,ziele miÅ‚ka wiosennego
-Anisi fructus,owoc anyÅ¼u
-Salviae folium,liÅ›Ä‡ szaÅ‚wii
-Sennae folium,liÅ›Ä‡ senesu
+Belladonnae folium,liœæ pokrzyku
+Adonidis vernalis herba,ziele mi³ka wiosennego
+Anisi fructus,owoc any¿u
+Salviae folium,liœæ sza³wii
+Sennae folium,liœæ senesu
 Chamomillae anthodium,koszyczek rumianku
 Frangulae cortex,kora kruszyny
 Lini semen,nasienie lnu
 Sambuci flos,kwiat bzu czarnego
-Ipecacuanhae radix,korzeÅ„ wymiotnicy
-Valerianae radix,korzeÅ„ kozÅ‚ka
-Rhei rhizoma,kÅ‚Ä…cze rzewienia
+Ipecacuanhae radix,korzeñ wymiotnicy
+Valerianae radix,korzeñ koz³ka
+Rhei rhizoma,k³¹cze rzewienia
 Eucalypti aetheroleum,olejek eukaliptusowy
-Menthae piperitae aetheroleum,olejek z miÄ™ty pieprzowcowej
+Menthae piperitae aetheroleum,olejek z miêty pieprzowcowej
 Ipecacuanhae tinctura,nalewka z wymiotnicy
-Valerianae tinctura,nalewka z kozÅ‚ka
+Valerianae tinctura,nalewka z koz³ka
