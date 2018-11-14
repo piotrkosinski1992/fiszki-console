@@ -13,19 +13,20 @@ Iodum,Jod
 Silicium,Krzem
 Lithium,Lit
 Magnesium,Magnez
-Cuprum,MiedŸ
-Plumbum,O³ów
+Cuprum,Miedź
+Plumbum,Ołów
 Kalium,Potas
-Hydrargyrum,Rtêæ
+Hydrargyrum,Rtęć
 Selenium,Selen
 Sulfur,Siarka
 Natrium,Sód
 Argentum,Srebro
 Oxygenium,Tlen
-Calcium,Wapñ
-Carboneum,Wêgiel
+Calcium,Wapń
+Carboneum,Węgiel
 Hydrogenium,Wodór
-Aurum,Z³oto
+Aurum,Złoto
+Ferrum,Żelazo
 Calcii oxidum,tlenek wapnia
 Hydrogenii peroxidum,nadtlenek wodoru
 Magnesii oxidum,tlenek magnezu
@@ -34,8 +35,8 @@ Aluminii hydroxidum,wodorotlenek glinu
 Calcii hydroxidum,wodorotlenek wapnia
 Natrii hydroxidum,wodorotlenek sodu
 Acidum sulfuricum,kwas siarkowy
-Acidum carbonicum,kwas wêglowy
-Acidum hydrocarbonicum,kwas wodorowêglowy
+Acidum carbonicum,kwas węglowy
+Acidum hydrocarbonicum,kwas wodorowęglowy
 Acidum phoshoricum,kwas fosforowy
 Acidum nitricum,kwas azotowy
 Acidum boricum,kwas borowy
@@ -50,19 +51,19 @@ Acidum citricum,kwas cytrynowy
 Acidum tartaricum,kwas winowy
 Acidum folicum,kwas foliowy
 Acidum ascorbicum,kwas askorbowy
-Magnesii carbonas,wêglan magnezu
+Magnesii carbonas,węglan magnezu
 Aluminii phosphas,fosforan glinu
 Argenti nitras,azotan srebra
 Natrii sulfas,siarczan sodu
 Kalii phosphas,fosforan potasu
-Lithii carbonas,wêglan litu
-Natrii hydrocarbonas,wodorowêglan sodu
+Lithii carbonas,węglan litu
+Natrii hydrocarbonas,wodorowęglan sodu
 Natrii dihydrophosphas,diwodorofosforan sodu
 Kalii permanganas,nadmanganian potasu
 Natrii tiosulfas,tiosiarczan sodu
 Natrii nitris,azotyn sodu
 Kalii sulfis,siarczyn potasu
-Ferrosi gluconas,glukonian ¿elaza
+Ferrosi gluconas,glukonian żelaza
 Natrii benzoas,benzoesan sodu
 Natrii salicylas,salicylan sodu
 Natrii citras,cytrynian sodu
@@ -81,19 +82,19 @@ Chlorpromazini hydrochloridum,chloropromazyny chlorowodorek
 Homatropini hydrobromidum,homatropiny bromowodorek
 Morphini hydrochloridum,morfiny chlorowodorek
 Papaverini hydrochloridum,papaweryny chlorowodorek
-Belladonnae folium,liœæ pokrzyku
-Adonidis vernalis herba,ziele mi³ka wiosennego
-Anisi fructus,owoc any¿u
-Salviae folium,liœæ sza³wii
-Sennae folium,liœæ senesu
+Belladonnae folium,liść pokrzyku
+Adonidis vernalis herba,ziele miłka wiosennego
+Anisi fructus,owoc anyżu
+Salviae folium,liść szałwii
+Sennae folium,liść senesu
 Chamomillae anthodium,koszyczek rumianku
 Frangulae cortex,kora kruszyny
 Lini semen,nasienie lnu
 Sambuci flos,kwiat bzu czarnego
-Ipecacuanhae radix,korzeñ wymiotnicy
-Valerianae radix,korzeñ koz³ka
-Rhei rhizoma,k³¹cze rzewienia
+Ipecacuanhae radix,korzeń wymiotnicy
+Valerianae radix,korzeń kozłka
+Rhei rhizoma,kłącze rzewienia
 Eucalypti aetheroleum,olejek eukaliptusowy
-Menthae piperitae aetheroleum,olejek z miêty pieprzowcowej
+Menthae piperitae aetheroleum,olejek z mięty pieprzowcowej
 Ipecacuanhae tinctura,nalewka z wymiotnicy
-Valerianae tinctura,nalewka z koz³ka
+Valerianae tinctura,nalewka z kozłka
