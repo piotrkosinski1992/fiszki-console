@@ -93,7 +93,7 @@ public class FiszkiService {
 			}
 
 			
-			return 0;
+			return passedValueInt;
 	}
 
 }
