@@ -1,4 +1,5 @@
 com\weta\model\Fiszka.class
 com\weta\MainClass.class
 com\weta\repo\BazaFiszek.class
-com\weta\utils\FiszkiTxt.class
+com\weta\exception\WrongDirectoryException.class
+com\weta\utils\FiszkiService.class

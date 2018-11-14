@@ -1,0 +1,73 @@
+po,ą
+daj takich dawek,D.t.d
+w równych częściach,aa
+do,ad
+do opłatków,ad caps. amyl.
+dowolnie,ad lib.
+równy,aeq
+koszyczek kwiatowy,Anthod.
+woda,Aq.
+woda destylowana,Aq. dest.
+woda do iniekcji,Aq. pro inj.
+gałka,Bol.
+kapsułka,Caps.
+kora,Cort.
+daj wydaj,D.
+odwar,Dec.
+destylowany,dest.
+drażetki,Drag.
+podziel,div.
+podziel na równe części,div. in part. aeq.
+emulsja,Emuls.
+w danym czasie,ex temp.
+wyciąg,Extr.
+zrób,f.
+kwiat,Fl.
+liść,Fol.
+owoc,Fr.
+gram,g
+kropla,Gtt.
+ziele,Hb. H-ba
+napar,Inf.
+wstrzyknięcie zastrzyk,Inj.
+wstrzyknięcie domięśniowe,Inj. i.m.
+wstrzyknięcie dożylne,Inj. i.v.
+wstrzyknięcie podskórne,Inj. s.c.
+zgodnie ze sztuką,l. a.
+naczynie,Lag.
+opakowanie oryginalne,Lag. orig.
+mazidło,Lin.
+zmieszaj,m.
+zmieszaj wydaj oznacz,M. D. S.
+zmieszaj zrób,M. f.
+zmieszaj zrób proszek,M. f. pulv. 
+mieszanka,Mixt.
+w liczbie,No, Nr
+olej,Ol.
+część,p.
+równe części,p. aeq.
+proszek,Pulv.
+ile potrzeba,q.s.
+korzeń,Rad.
+weź,Rp.
+powtórzyć,rep.
+żywica,Res.
+kłącze,Rhiz.
+nasienie,Sem.
+suchy,sicc.
+oznacz,S.
+syrop,Sir.
+roztwór,Sol.
+ziółka,Spec.
+wyjałowiony,steril.
+sok,Succ.
+zawiesina,Susp.
+czopki,Supp.
+tabletki,Tabl.
+nalewka,Tct. T-ra
+maść,Ung.
+Rp,wydawane z przepisu lekarza
+Rpw,wydawane z przepisu lekarza zawierające środki odurzające lub substancje psychotropowe
+Lz,stosowane wyłącznie w lecznictwie zamkniętym
+Rpz,wydawane z przepisu lekarza do zastrzeżonego stosowania
+OTC,wydawane bez przepisu lekarza

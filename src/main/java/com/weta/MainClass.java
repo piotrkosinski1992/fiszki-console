@@ -1,12 +1,19 @@
 package com.weta;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
 
+import com.weta.exception.ToBigNumberException;
+import com.weta.exception.WrongDirectoryException;
 import com.weta.model.Fiszka;
 import com.weta.repo.BazaFiszek;
-import com.weta.utils.FiszkiTxt;
+import com.weta.utils.FiszkiService;
 
 /**
  * 
@@ -17,11 +24,55 @@ import com.weta.utils.FiszkiTxt;
  */
 public class MainClass {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, URISyntaxException {
+		final String FISZKI_DIRECTORY_PATH = "fiszki/";
+		boolean fiszkiFileChooseCompleted = false;
 		BazaFiszek baza = new BazaFiszek();
-		FiszkiTxt fiszkiUtil = new FiszkiTxt();
+		FiszkiService fiszkiService = new FiszkiService();
+		Scanner sc = new Scanner(System.in);
 		
-		baza.setListaFiszek(fiszkiUtil.zaladujFiszkiZPliku());
+		int pickedFaculty = 0;
+		int pickedFiszkiFile = 0;
+		
+		List<String> facultyDirectoriesNames = null;
+		List<String> fiszkiFileNames = null;
+		
+		
+		while(!fiszkiFileChooseCompleted) {
+			facultyDirectoriesNames = new ArrayList<>();
+			fiszkiFileNames = new ArrayList<>();
+			try {
+				AtomicInteger counter = new AtomicInteger(0);
+				facultyDirectoriesNames = fiszkiService.getListOfElementsInDirectory(FISZKI_DIRECTORY_PATH);
+				
+				System.out.println("Wybierz przedmiot:\n");
+				facultyDirectoriesNames.forEach(faculty -> System.out.println(counter.getAndIncrement() + ". " + faculty));
+				
+				pickedFaculty = fiszkiService.verifyPassedValue(sc.nextLine(), facultyDirectoriesNames.size());
+				
+				fiszkiFileNames = fiszkiService.getListOfElementsInDirectory(FISZKI_DIRECTORY_PATH + facultyDirectoriesNames.get(pickedFaculty));
+				
+				System.out.println("Wybierz plik z fiszkami:\n");
+				counter.set(0);
+				fiszkiFileNames.forEach(fiszkiFile -> System.out.println(counter.getAndIncrement() + ". " + fiszkiFile));
+				
+				pickedFiszkiFile = fiszkiService.verifyPassedValue(sc.nextLine(), fiszkiFileNames.size());
+				
+				fiszkiService.getListOfElementsInDirectory(FISZKI_DIRECTORY_PATH + facultyDirectoriesNames.get(pickedFaculty) + "/" + fiszkiFileNames.get(pickedFiszkiFile));
+				
+				
+				
+			} catch (WrongDirectoryException | NumberFormatException | ToBigNumberException e) {
+				System.out.println("Error: " + e.getMessage());
+				continue;
+			}
+			
+			fiszkiFileChooseCompleted = true;
+
+		}
+		
+		
+		baza.setListaFiszek(fiszkiService.zaladujFiszkiZPliku(new File(FISZKI_DIRECTORY_PATH + facultyDirectoriesNames.get(pickedFaculty) + "/" + fiszkiFileNames.get(pickedFiszkiFile))));
 		
 		int lbFiszek = baza.getListaFiszek().size();
 
@@ -30,16 +81,14 @@ public class MainClass {
 		int lbPoprawnychOdpowiedzi = 0;
 		int lbZlychOdpowiedzi = 0;
 
-		Scanner sc = new Scanner(System.in);
-
-
 		while (baza.getListaFiszek().size() > 0) {
-
+				Scanner scanner = new Scanner(System.in);
+				
 				Fiszka wylosowana = baza.getListaFiszek().get(random.nextInt(lbFiszek));
 
 				System.out.println(wylosowana.getPolski());
 
-				String lacinska = sc.nextLine();
+				String lacinska = scanner.nextLine();
 
 				if (lacinska.replaceAll(" ", "").equals(wylosowana.getLacinski().replaceAll(" ", ""))) {
 					System.out.println("BRAWO\n");
@@ -48,11 +97,11 @@ public class MainClass {
 					lbFiszek--;
 
 				} else {
-					System.out.println("B³¹d, poprawna odpowiedŸ to: " + wylosowana.getLacinski() + "\n");
+					System.out.println("BÅ‚Ä…d, poprawna odpowiedz to: " + wylosowana.getLacinski() + "\n");
 					lbZlychOdpowiedzi++;
 				}
 				
-				System.out.println("Pozosta³o do zrobienia: " + baza.getListaFiszek().size() + " fiszek");
+				System.out.println("PozostaÅ‚o do zrobienia: " + baza.getListaFiszek().size() + " fiszek");
  
 		}
 		int wynik = (lbPoprawnychOdpowiedzi * 100) / (lbPoprawnychOdpowiedzi + lbZlychOdpowiedzi);
