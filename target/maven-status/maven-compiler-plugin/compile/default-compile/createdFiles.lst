@@ -1,4 +1,5 @@
 com\weta\model\Fiszka.class
+com\weta\exception\ToBigNumberException.class
 com\weta\MainClass.class
 com\weta\repo\BazaFiszek.class
 com\weta\exception\WrongDirectoryException.class

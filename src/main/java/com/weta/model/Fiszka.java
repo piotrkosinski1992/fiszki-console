@@ -2,31 +2,27 @@ package com.weta.model;
 
 public class Fiszka {
 
-	private String polski;
-	private String lacinski;
+	private String firstSide;
+	private String secondSide;
 	
 	public Fiszka(String polski, String lacinski) {
-		this.polski = polski;
-		this.lacinski = lacinski;
+		this.firstSide = polski;
+		this.secondSide = lacinski;
 	}
 
-	public String getPolski() {
-		return polski;
+	public String getFirstSide() {
+		return firstSide;
 	}
 
-	public void setPolski(String polski) {
-		this.polski = polski;
+	public void setFirstSide(String firstSide) {
+		this.firstSide = firstSide;
 	}
 
-	public String getLacinski() {
-		return lacinski;
+	public String getSecondSide() {
+		return secondSide;
 	}
 
-	public void setLacinski(String lacinski) {
-		this.lacinski = lacinski;
-	}
-	
-	
-	
-	
+	public void setSecondSide(String secondSide) {
+		this.secondSide = secondSide;
+	}	
 }

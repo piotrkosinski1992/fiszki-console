@@ -84,20 +84,25 @@ public class MainClass {
 		while (baza.getListaFiszek().size() > 0) {
 				Scanner scanner = new Scanner(System.in);
 				
-				Fiszka wylosowana = baza.getListaFiszek().get(random.nextInt(lbFiszek));
+				Fiszka fiszka = baza.getListaFiszek().get(random.nextInt(lbFiszek));
 
-				System.out.println(wylosowana.getPolski());
+				System.out.println(fiszka.getFirstSide());
 
-				String lacinska = scanner.nextLine();
+				String secondSideFromUser = scanner.nextLine();
+				
+				if(secondSideFromUser.equals("e")) {
+					baza.updateFiszka();
+					continue;
+				}
 
-				if (lacinska.replaceAll(" ", "").equals(wylosowana.getLacinski().replaceAll(" ", ""))) {
+				if (secondSideFromUser.replaceAll(" ", "").equals(fiszka.getSecondSide().replaceAll(" ", ""))) {
 					System.out.println("BRAWO\n");
-					baza.getListaFiszek().remove(wylosowana);
+					baza.getListaFiszek().remove(fiszka);
 					lbPoprawnychOdpowiedzi++;
 					lbFiszek--;
 
 				} else {
-					System.out.println("Błąd, poprawna odpowiedz to: " + wylosowana.getLacinski() + "\n");
+					System.out.println("Błąd, poprawna odpowiedz to: " + fiszka.getSecondSide() + "\n");
 					lbZlychOdpowiedzi++;
 				}
 				
