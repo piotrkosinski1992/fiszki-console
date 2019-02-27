@@ -20,7 +20,7 @@ import com.weta.utils.FiszkiService;
  * 
  * @author Kosinski
  * 
- * To run externaly, use cmd command: java -cp Fiszki-1.jar com.weta.MainClass
+ * To run externaly, use cmd command: java -cp Fiszki-1.jar com.weta.MainClass :D
  *
  */
 public class MainClass {
