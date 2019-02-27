@@ -23,6 +23,7 @@ public class FiszkiService {
 		List<Fiszka> fiszki = new ArrayList<Fiszka>();
 		
 		InputStream targetStream = new FileInputStream(fiszkiFile);
+//		Bad habit of commenting
 //		InputStream targetStream = getClass().getResourceAsStream("/" + fiszkiFile.getPath()); 
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(targetStream));
