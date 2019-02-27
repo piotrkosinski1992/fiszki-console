@@ -9,7 +9,7 @@ import com.weta.model.Fiszka;
 
 public class BazaFiszek {
 
-	private List<Fiszka> listaFiszek = new ArrayList<Fiszka>();
+	private List<Fiszka> listaFiszek = new ArrayList<>();
 
 	public BazaFiszek() {
 	}
@@ -26,7 +26,7 @@ public class BazaFiszek {
 		while (true) {
 			Scanner sc = new Scanner(System.in);
 
-			System.out.println("Napisz błędną wersję fiszki");
+			System.out.println("Napisz błędną wersję fiszki:");
 
 			String incorrectFiszkaSide = sc.nextLine();
 			
