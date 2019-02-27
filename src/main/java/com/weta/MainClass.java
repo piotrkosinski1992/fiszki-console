@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Logger;
 
 import com.weta.exception.ToBigNumberException;
 import com.weta.exception.WrongDirectoryException;
@@ -23,6 +24,8 @@ import com.weta.utils.FiszkiService;
  *
  */
 public class MainClass {
+
+	private static final Logger LOGGER = Logger.getLogger(MainClass.class.getName());
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
 		final String FISZKI_DIRECTORY_PATH = "fiszki/";
@@ -44,15 +47,15 @@ public class MainClass {
 			try {
 				AtomicInteger counter = new AtomicInteger(0);
 				facultyDirectoriesNames = fiszkiService.getListOfElementsInDirectory(FISZKI_DIRECTORY_PATH);
-				
-				System.out.println("Wybierz przedmiot:\n");
+
+				LOGGER.info("Wybierz przedmiot:\n");
 				facultyDirectoriesNames.forEach(faculty -> System.out.println(counter.getAndIncrement() + ". " + faculty));
 				
 				pickedFaculty = fiszkiService.verifyPassedValue(sc.nextLine(), facultyDirectoriesNames.size());
 				
 				fiszkiFileNames = fiszkiService.getListOfElementsInDirectory(FISZKI_DIRECTORY_PATH + facultyDirectoriesNames.get(pickedFaculty));
-				
-				System.out.println("Wybierz plik z fiszkami:\n");
+
+				LOGGER.info("Wybierz plik z fiszkami:\n");
 				counter.set(0);
 				fiszkiFileNames.forEach(fiszkiFile -> System.out.println(counter.getAndIncrement() + ". " + fiszkiFile));
 				
@@ -63,7 +66,7 @@ public class MainClass {
 				
 				
 			} catch (WrongDirectoryException | NumberFormatException | ToBigNumberException e) {
-				System.out.println("Error: " + e.getMessage());
+				LOGGER.warning("Error: " + e.getMessage());
 				continue;
 			}
 			
